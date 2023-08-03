@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --white: #F9F9F9;
+    --black: #181818;
+    --darkgrey: #474747;
+    --lightgrey: #EBE9EA
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, serif;
+    font-weight: 600;
+}
+
+header{
+    height: 120px;
+    width: 100%;
+}
+
+#discount-header,
+#pagetitle-header,
+#hero-text,
+#main-title-subtitle,
+.card,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#discount-header{
+    height: 50%;
+    background: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+#pagetitle-header{
+    height: 50%;
+    color: var(--black);
+    font-size: 24px;
+}
+
+#hero{
+    min-height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/wallpaper.jpeg') fixed no-repeat center;
+    background-size: cover;
+}
+
+#hero-text {
+    width: 50%;
+    min-height: 500px;
+    flex-direction: column;
+    color: var(--white);
+    align-items: unset;
+    margin-left: 60px;
+}
+
+.hero-text-highlight h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero-text-content p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 35px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#main-title-subtitle{
+    margin: 60px 0 10px 0;
+    flex-direction: column;
+}
+
+.main-subtitle{
+    color: var(--darkgrey);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background: var(--lightgrey);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#content-grid{
+    margin: 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 250px;
+    height: 150px;
+}
+
+.card:hover img{
+    width: 300px;
+    height: 175px;
+    transition: 0.5s;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background: var(--black);
+    margin-top: 20px;
+    color: var(--white);
+    font-weight: 500;
+}
