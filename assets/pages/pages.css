@@ -72,8 +72,8 @@ main{
 }
 
 #product-image-view img{
-    max-width: 500px;
-    max-height: 320px;
+    width: 500px;
+    height: 320px;
 }
 
 #image-container{
