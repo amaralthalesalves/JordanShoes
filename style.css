@@ -22,7 +22,9 @@ header{
 #discount-header,
 #pagetitle-header,
 #hero-text,
+#hero-image,
 #main-title-subtitle,
+#hero-button,
 .card,
 footer{
     display: flex;
@@ -44,37 +46,54 @@ footer{
     font-size: 24px;
 }
 
+#logo-header{
+    filter: brightness(0);
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
 #hero{
-    min-height: 500px;
+    min-height: 80vh;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/wallpaper.jpeg') fixed no-repeat center;
-    background-size: cover;
+    background: radial-gradient(circle at center, #FF0000, #b30a0a);
+    display: flex;
+    flex-direction: row;
 }
 
 #hero-text {
-    width: 35%;
-    min-height: 500px;
+    min-height: inherit;
     flex-direction: column;
     color: var(--white);
-    align-items: unset;
-    margin-left: 60px;
+    min-width: 50%;
+    padding: 4rem;
 }
 
 .hero-text-highlight h2{
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 700;
 }
 
-.hero-text-content p{
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 35px;
-    font-style: normal;
-    font-weight: 400;
+#hero-image{
+    overflow: hidden;
+}
+#hero-image img{
+    transform: scale(0.6);
 }
 
-.hero-text-content{
-    flex-direction: row;
+#hero a{
+    text-decoration: none;
+}
+
+#hero-button{
+    color: var(--white);
+    transform: skewX(5deg);
+    background: var(--black);
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: var(--black) solid 2px;
 }
 
 #main-title-subtitle{
@@ -89,8 +108,8 @@ footer{
 }
 
 .card{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     background: var(--lightgrey);
     margin-top: 20px;
     cursor: pointer;
@@ -100,7 +119,7 @@ footer{
     margin: 0 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -123,8 +142,25 @@ footer{
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1080px) {
-    #content-grid{
+@media only screen and (max-width: 480px) {
+    #content-grid {
         justify-content: space-evenly;
     }
+    #hero{
+        flex-direction: column-reverse;
+    }
+    #hero-image{
+        transform: scale(1.2);
+        margin-top: 5rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #hero-text{
+        min-height: 100%;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
