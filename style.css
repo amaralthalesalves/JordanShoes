@@ -148,7 +148,6 @@ footer{
         flex-direction: column-reverse;
     }
     #hero-image{
-        transform: scale(1.2);
         margin-top: 5rem;
         margin-bottom: 0;
         padding-bottom: 0;
