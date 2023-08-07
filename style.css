@@ -3,7 +3,8 @@
     --white: #F9F9F9;
     --black: #181818;
     --darkgrey: #474747;
-    --lightgrey: #EBE9EA
+    --lightgrey: #EBE9EA;
+    --midgrey: #8c8c8c;
 }
 
 *{
@@ -48,7 +49,7 @@ header{
 #hero-image,
 #main-title-subtitle,
 #hero-button,
-.card,
+.card-img,
 #famous-users-title-subtitle-container,
 footer{
     display: flex;
@@ -130,12 +131,43 @@ footer{
 }
 
 .card{
-    width: 280px;
-    height: 280px;
-    background: var(--lightgrey);
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
     margin-top: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+.card-text h2{
+    font-size: 15px;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.card-stars{
+    display: flex;
+    justify-content: center;
+}
+
+.card-stars i:not(:first-child){
+    margin-left: 2px;
+}
+
+.card-button{
+    width: fit-content;
+    padding: 5px;
+    flex-direction: column;
+    margin-top: 5px;
+    text-transform: uppercase;
+    transform: skewX(5deg);
+    cursor: pointer;
+    color: var(--white);
+    background: var(--black);
+}
+
 
 #content-grid{
     margin: 0 60px;
@@ -145,14 +177,23 @@ footer{
     flex-wrap: wrap;
 }
 
-.card img{
-    width: 250px;
+.card-img{
+    width: 230px;
     height: 150px;
+    background: var(--lightgrey);
+    border-radius: 10%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.card img{
+    width: 200px;
+    height: 125px;
     transition: 0.5s ease-in-out;
 }
 
 .card:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 footer{
@@ -178,5 +219,9 @@ footer{
     }
     #hero-text{
         min-height: 100%;
+    }
+
+    .card-img{
+        width: 210px;
     }
 }
