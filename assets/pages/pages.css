@@ -105,6 +105,7 @@ main{
 
 .product-name{
     margin: 20px 0 0 250px;
+    font-size: 30px;
 }
 
 .active{
@@ -169,6 +170,16 @@ main{
     cursor: pointer;
 }
 
+#cep{
+    outline: none;
+    border-radius: 5px;
+    border: var(--black) solid 1px;
+}
+
+#cep:focus{
+    border-color: var(--black);
+}
+
 footer {
     width: 100%;
     height: 60px;
@@ -180,12 +191,16 @@ footer {
     bottom: 0;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 1080px){
+    #product-image-preview-side{
+        margin-top: 0;
+    }
     main{
         flex-direction: column;
         align-items: center;
         height: 80vh;
         justify-content: center;
+        margin-left: 0;
     }
     #product-image-view{
         margin-left: 0;
@@ -228,5 +243,22 @@ footer {
     .product-name{
         margin-top: 150px;
         font-size: 50px;
+    }
+    #buy-now{
+        font-size: 30px;
+        width: fit-content;
+        padding: 30px;
+    }
+    #stars{
+        font-size: 30px;
+    }
+    #price{
+        font-size: 60px;
+    }
+    #price-discount{
+        font-size: 25px;
+    }
+    #cep-input{
+        font-size: 22px;
     }
 }
