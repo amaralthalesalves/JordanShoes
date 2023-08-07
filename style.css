@@ -161,6 +161,7 @@ footer{
     padding: 5px;
     flex-direction: column;
     margin-top: 5px;
+    font-size: 13px;
     text-transform: uppercase;
     transform: skewX(5deg);
     cursor: pointer;
@@ -170,7 +171,7 @@ footer{
 
 
 #content-grid{
-    margin: 0 60px;
+    margin: 0 60px 10px 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
