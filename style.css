@@ -208,7 +208,7 @@ footer{
 
 @media only screen and (max-width: 1080px) {
     #content-grid {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     #hero{
         flex-direction: column-reverse;
@@ -223,6 +223,18 @@ footer{
     }
 
     .card-img{
-        width: 210px;
+        width: 350px;
+        height: 200px;
+    }
+    .card-text h2{
+        font-size: 25px;
+    }
+    .card-button{
+        padding: 12px;
+        font-size: 20px;
+    }
+    .card{
+        width: 400px;
+        height: 400px;
     }
 }
